@@ -1,0 +1,17 @@
+aside{
+    background: url(../assets/fotos/Background.png) center no-repeat;
+    background-size: cover;
+    padding: 1.25rem;
+    margin-block: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    
+    & h1{
+        font: var(--logo);
+        color: var(--pink);
+    }
+    & p{
+        font: var(--body-md);
+        color: var(--text-heading);
+    }
+}
