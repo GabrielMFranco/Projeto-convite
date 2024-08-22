@@ -55,32 +55,34 @@ form{
     .radio-style{
         background-color: var(--input-base);
         border-radius: 8px;
+        padding: 4px;
+        gap: 4px;
     }
 
     & .tipo{
         position: relative;
         border-radius: 8px;
-        
+
         &:hover, &:focus{
-            background-color: blue;
+            background-color: var(--shape-button);
         }
 
-
+        &:has(:checked){
+            background-color: var(--shape-button);
+        }
+        
         & input{
            all: unset;
            position: absolute;
            inset: 0;
-
         }
 
         & label{
-            text-align: center;
-            
-            
-
-        }
+            text-align: center;                      
+        } 
     }
 }
+    /* COLOCAR ICONE NO INICIO DOS BOTOES */
 
 
 
