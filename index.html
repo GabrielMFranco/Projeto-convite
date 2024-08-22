@@ -31,36 +31,61 @@
                         <div class="block">
                             <label for="titulo">Titulo</label>
                             <input type="text" id="titulo" name="titulo" placeholder="Nome do evento">
-                        </div>
+                        
 
-                        <div class="grid">
-                            <div class="conteudo">
-                                <label for="inicio">Inicio</label>
-                                <input type="datetime-local" name="inicio" id="inicio">
-                            </div>
-
-                            <div class="conteudo">
-                                <label for="fim">Fim</label>
-                                <input type="datetime-local" name="fim" id="fim">
-                            </div>
-<!-- ok -->
-                            <label>Tipo</label>
-                           
-                            <div class="radio-tipo">
-                                <div class="radio-opcao">
-                                    <input type="radio" name="tipo" id="presencial">
-                                    <label for="presencial"><img class="icone-p" src="" alt="">Presencial</label>
+                            <div class="grid">
+                                <div class="conteudo">
+                                    <label for="inicio">Inicio</label>
+                                    <input type="datetime-local" name="inicio" id="inicio">
                                 </div>
 
-                                <div class="radio-opcao">
-                                    <input type="radio" name="tipo" id="online">
-                                    <label for="online"><img class="icone-o" src="" alt="">Online</label>
+                                <div class="conteudo">
+                                    <label for="fim">Fim</label>
+                                    <input type="datetime-local" name="fim" id="fim">
+                                </div>
+                                
+                                <div class="conteudo">
+                                    <label>Tipo</label>
+                                    <div class="grid radio-style">
+                                        <div class="tipo">
+                                            <input type="radio" name="tipo" id="presencial">
+                                            <label for="presencial">Presencial</label>
+                                        </div>
+                                        
+                                        <div class="tipo">
+                                            <div class="conteudo">
+                                                <input type="radio" name="tipo" id="online">
+                                                <label for="online">Online</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="conteudo">
+                                    <label for="local">Local</label>
+                                    <input type="text" name="local" id="local" placeholder="Link ou endereço">
                                 </div>
                             </div>
+    <!-- ok -->             </div>   
+
                             
-                            <label for="local">Local</label>
-                            <input type="text" name="local" id="local">
+
+                            <!-- <div class="grid">
+                                <div class="radio">
+                                    <div class="radio-opcao">
+                                        <input type="radio" name="tipo" id="presencial">
+                                        <label for="presencial"><img class="icone-p" src="" alt="">Presencial</label>
+                                    </div>
+
+                                    <div class="radio-opcao">
+                                        <input type="radio" name="tipo" id="online">
+                                        <label for="online"><img class="icone-o" src="" alt="">Online</label>
+                                    </div>
+                                </div> -->
+                                
+                                
                         </div>
+
                     </fieldset>
                     <fieldset class="perso">
                     </fieldset>
