@@ -28,7 +28,7 @@
     --lime: #E1FF59;
     --green: #59FF91;
     --cyan: #59FF91;
-    --havy: #6A59FF;
+    --navy: #6A59FF;
 
     --danger: #FF5959;
 
@@ -84,4 +84,7 @@ h3{
 }
 fieldset{
     border: none;
+}
+fieldset + fieldset{
+    margin-top: 48px;
 }

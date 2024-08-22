@@ -1,0 +1,65 @@
+.perso{   
+
+    & #radio-cores{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        
+
+        & input{
+            all: unse;
+            position: absolute;
+            inset: 0;
+    
+            width: 40px;
+            height: 40px;    
+            
+        }
+
+        & label{
+            font: var(--body-sm);
+            color: var(--text-body);
+    
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            
+            
+    
+            &.cor1{
+                background-color:var(--brand-light);
+            }
+            &.cor2{
+                background-color:var(--navy);
+            }
+            &.cor3{
+                background-color:var(--purple);
+            }
+            &.cor4{
+                background-color:var(--fuschia);
+            }
+            &.cor5{
+                background-color:var(--pink);
+            }
+            &.cor6{
+                background-color:var(--danger);
+            }
+            &.cor7{
+                background-color:var(--orange);
+            }
+            &.cor8{
+                background-color:var(--yellow);
+            }
+            &.cor9{
+                background-color:var(--lime );
+            }
+            &.cor10{
+                background-color:var(--green);
+            }
+            &.cor11{
+                background-color:var(--cyan);
+            }
+        }
+        
+    }
+}
