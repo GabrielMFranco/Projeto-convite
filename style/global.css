@@ -45,10 +45,43 @@
     --text-heading: #F9F9F9;
 }
 
+body{
+    background-color: var(--shape-background);
+}
+
 main{
     display: grid;
     grid-template-columns: 31.25% 68.75%;
+    gap: 20px;
 
     height: 100vh;
-    overflow: hidden;
+    width: 100vw;
+    /*overflow: hidden;*/
+}
+
+h1{
+    color: var(--text-heading);
+    font: var(--heading-md);
+
+    margin-bottom: 40px;
+}
+
+h2{
+    display: flex;
+    font: var(--heading-sd);
+    color: var(--text-heading);
+    gap: 12px;
+    margin-bottom: 24px;
+    
+    img{
+        align-self: baseline;
+    }
+}
+
+h3{
+    font: var(--body-sm);
+    color: var(--text-heading);
+}
+fieldset{
+    border: none;
 }

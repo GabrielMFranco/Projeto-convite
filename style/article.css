@@ -1,0 +1,19 @@
+article{
+    background-color: var(--shape-body);
+    margin-block: 20px;
+    margin-right: 40px;
+    max-width: 100%;
+    overflow: auto;
+    border-radius: 12px;
+
+    & .container{
+        width: 560px;
+        margin-inline: auto;
+        margin-block: 80px;
+    }
+}
+
+/*     FORMULARIOS     */
+
+/* sobre o evento */ 
+
