@@ -30,8 +30,16 @@ form{
         /* mudar seletor*/
     }
 
-    & input + label{
-        
+    & textarea{
+        background-color: var(--input-base);
+        border: none;
+        border-radius: 8px;
+        width: 100%;
+        resize: none;
+
+        font: var(--body-md);
+        color: var(--input-placeholder);
+        padding: 16px;
     }
 }
 
@@ -52,16 +60,28 @@ form{
         gap: 16px;
     }
 
-    .radio-style{
+    .radio-style{      
         background-color: var(--input-base);
         border-radius: 8px;
-        padding: 4px;
+        padding: px;
         gap: 4px;
+        
     }
 
     & .tipo{
         position: relative;
         border-radius: 8px;
+
+        & .radio-image{
+            background-image: url(../assets/icone/building-2.svg);
+            width: 16px;
+            margin-right: 8px;   
+        }
+        & .radio-image-2{
+            background-image: url(../assets/icone/video.svg);
+            width: 16px;
+            margin-right: 8px;   
+        }
 
         &:hover, &:focus{
             background-color: var(--shape-button);
@@ -69,6 +89,13 @@ form{
 
         &:has(:checked){
             background-color: var(--shape-button);
+
+            & .radio-image{
+                background-image: url(../assets/icone/biulding-checked.svg);
+            }
+            & .radio-image-2{
+                background-image: url(../assets/icone/video-checked.svg);
+            }
         }
         
         & input{
@@ -78,7 +105,9 @@ form{
         }
 
         & label{
-            text-align: center;                      
+            display: flex;
+            justify-content: center;                           
+            
         } 
     }
 }
