@@ -28,15 +28,46 @@
                             <img class="icone" src="assets/icone/calendar.svg" alt="">
                             Sobre o evento
                         </h2>
-                        <div class="full">
+                        <div class="block">
                             <label for="titulo">Titulo</label>
                             <input type="text" id="titulo" name="titulo" placeholder="Nome do evento">
+                        </div>
+
+                        <div class="grid">
+                            <div class="conteudo">
+                                <label for="inicio">Inicio</label>
+                                <input type="datetime-local" name="inicio" id="inicio">
+                            </div>
+
+                            <div class="conteudo">
+                                <label for="fim">Fim</label>
+                                <input type="datetime-local" name="fim" id="fim">
+                            </div>
+<!-- ok -->
+                            <label>Tipo</label>
+                           
+                            <div class="radio-tipo">
+                                <div class="radio-opcao">
+                                    <input type="radio" name="tipo" id="presencial">
+                                    <label for="presencial"><img class="icone-p" src="" alt="">Presencial</label>
+                                </div>
+
+                                <div class="radio-opcao">
+                                    <input type="radio" name="tipo" id="online">
+                                    <label for="online"><img class="icone-o" src="" alt="">Online</label>
+                                </div>
+                            </div>
+                            
+                            <label for="local">Local</label>
+                            <input type="text" name="local" id="local">
                         </div>
                     </fieldset>
                     <fieldset class="perso">
                     </fieldset>
+
                     <fieldset class="contato">
                     </fieldset>
+
                     <fieldset class="termos">
                     </fieldset>
                 </form>           

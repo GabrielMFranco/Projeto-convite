@@ -15,5 +15,44 @@ article{
 
 /*     FORMULARIOS     */
 
-/* sobre o evento */ 
+form{
+    & input{
+        background-color: var(--input-base);
+        border: none;
+        border-radius: 8px;
+        height: 48px;
+        width: 100%;
 
+        font: var(--body-md);
+        color: var(--input-placeholder);
+        padding-inline: 16px;
+
+        /* mudar seletor*/
+    }
+
+    & input + label{
+        
+    }
+}
+
+/* sobre o evento */ 
+.info-evento{
+    &  label{
+        display: block;
+        margin-block: 16px 12px;
+
+        font: var(--body-sm);
+        color: var(--text-body);
+    }
+
+    & .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        gap: 16px;
+    }
+}
+
+
+
+   
