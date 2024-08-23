@@ -78,13 +78,10 @@ h2{
     }
 }
 
-h3{
-    font: var(--body-sm);
-    color: var(--text-heading);
-}
 fieldset{
     border: none;
 }
+
 fieldset + fieldset{
     margin-top: 48px;
 }

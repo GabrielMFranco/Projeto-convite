@@ -1,4 +1,25 @@
 .info-evento{
+
+    input[type="datetime-local"]{
+        position: relative;
+
+        &::-webkit-calendar-picker-indicator{
+            opacity: 0;
+        }
+
+        &::before{
+            content: '';
+            position: absolute;
+            background: url(../../assets/icone/calendar.svg)center/contain;
+            right: 1rem;
+            width: 1.25rem;
+            height: 1.25rem;
+
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
     &  label{
         display: block;
         margin-block: 16px 12px;
@@ -25,6 +46,8 @@
     & .tipo{
         position: relative;
         border-radius: 8px;
+
+
 
         & .radio-image{
             background-image: url(../../assets/icone/building-2.svg);
@@ -60,8 +83,10 @@
 
         & label{
             display: flex;
-            justify-content: center;                           
+            justify-content: center; 
+                                   
             
         } 
+        
     }
 }

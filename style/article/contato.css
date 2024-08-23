@@ -1,0 +1,101 @@
+label{
+    font:var(--body-sm);
+    color: var(--text-body);
+    
+}
+
+strong{
+    color: var(--brand-light);
+    text-decoration: underline;
+}
+
+.contato{
+    margin-bottom: 48px;
+
+    input{
+        margin-block: 5px 16px;
+    }
+
+    
+
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+}
+
+/*   TERMOS DE USO   */
+
+.termos{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    padding-block: 40px;
+    border-top: 1px solid var(--input-stroke);
+
+    input[type="checkbox"]{
+        width: 10px;
+    }
+
+    .conteudo{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        position: relative;
+        margin-block: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        align-items: center;
+
+        & [type="checkbox"]{
+            all: unset;
+            position: absolute;
+            inset: 0;
+            cursor: pointer;
+            
+        }
+
+        & .image{
+            background: url(../../assets/icone/checkbox.svg);
+            background-size: cover;
+            width: 1rem;
+            height: 1rem;
+        }
+
+        &:has(:checked){
+            .image{
+                background-image: url(../../assets/icone/checkbox-checked.svg);
+            }
+        }
+    }
+
+    button{   
+        display: flex;    
+        all: unset;
+        width: 177px;
+        display: flex;
+        margin-top: 40px;
+        justify-self: right;
+        
+        
+        input{
+            display: flex;
+            background:var(--brand-dark) url(../../assets/icone/ticket.svg) no-repeat ;
+            color: var(--text-heading);
+            background-position: center left;
+            background-position-x: 20px;
+            
+            text-indent: 40px;
+
+            &:hover, &:focus{
+                background-color: var(--brand-mid);
+            }
+        }
+    }
+}
+
+footer{
+    font: var(--heading-md);
+    color: var(--text-heading);
+}
