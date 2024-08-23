@@ -143,10 +143,8 @@
         grid-template-columns: 1fr 2fr;
         gap: 16px; 
         
-        input{
-            /* trasparente */         
-        }
-
+    
+        /* */
         .conteudo{                   
             display: flex;
             align-items: center;
@@ -156,11 +154,11 @@
 
 
             input[type="checkbox"]{
-                opacity: ;
+                opacity: 0;
                 position: absolute;
-                
+               
             }
-
+            /* */
             input[type="file"]{
                 align-content: center;
                 position: relative;               
