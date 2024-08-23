@@ -11,9 +11,10 @@ strong{
 
 .contato{
     margin-bottom: 48px;
+    position: relative;
 
     input{
-        margin-block: 5px 16px;
+        margin-block: 5px 36px;
     }
 
     
@@ -23,7 +24,34 @@ strong{
         grid-template-columns: 1fr 1fr;
         gap: 16px;
     }
+
+    .obrigatorio{
+        margin-top: 5px;
+        display: flex;
+        color: var(--danger);
+        font: var(--body-xs);
+        margin-bottom: 16px;
+        gap: 6px;
+        align-items: center;
+        position: absolute;
+        top: 47%;
+        
+
+        img{
+            width: 14.33px;    
+            height: 14px;       
+        }
+
+       
+    }
+    input[type="text"]:valid + .obrigatorio{
+        display: none;
+       
+    }
+
 }
+
+
 
 /*   TERMOS DE USO   */
 
